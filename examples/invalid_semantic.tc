@@ -1,0 +1,13 @@
+// invalid_semantic.tc - valid syntax, but the program makes no sense
+int x = 10;
+int count = 0;
+total = x + 2;          // undeclared variable
+int x = 4;              // redeclaration
+print(cnt);             // typo -> did-you-mean hint
+break;                  // not inside a loop
+int r = 7 % 2.5;        // % needs ints
+int bad = 5 / 0;        // constant division by zero
+int t = x + "hi";       // string in expression
+int y;
+print(y);               // used before assignment
+int small = 3.9;        // narrowing warning

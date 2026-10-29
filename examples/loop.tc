@@ -1,0 +1,25 @@
+// loop.tc - while, for, break and continue
+int i = 1;
+int sum = 0;
+while (i <= 5) {
+    sum += i;
+    i++;
+}
+print("sum 1..5 =", sum);
+
+for (int j = 1; j <= 10; j++) {
+    if (j % 2 == 0) {
+        continue;            // skip even numbers
+    }
+    if (j > 7) {
+        break;               // stop after 7
+    }
+    print("odd:", j);
+}
+
+// factorial of 6
+int fact = 1;
+for (int n = 2; n <= 6; n++) {
+    fact *= n;
+}
+print("6! =", fact);

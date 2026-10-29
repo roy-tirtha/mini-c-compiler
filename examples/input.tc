@@ -1,0 +1,10 @@
+// input.tc - reading numbers from the user with read()
+int n;
+print("Enter a number:");
+read(n);
+
+int total = 0;
+for (int i = 1; i <= n; i++) {
+    total += i;
+}
+print("Sum of 1 to", n, "is", total);

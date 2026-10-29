@@ -1,0 +1,10 @@
+// basic.tc - variables, assignment and print
+int age = 20;
+float price = 9.5;
+int total;
+
+total = age + 5;
+
+print("Age:", age);
+print("Price:", price);
+print("Total:", total);

@@ -1,0 +1,19 @@
+// conditional.tc - if / else if / else and logical operators
+int score = 72;
+
+if (score >= 90) {
+    print("Grade A");
+} else if (score >= 75) {
+    print("Grade B");
+} else if (score >= 60) {
+    print("Grade C");
+} else {
+    print("Fail");
+}
+
+int year = 2024;
+if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    print(year, "is a leap year");
+} else {
+    print(year, "is not a leap year");
+}

@@ -1,0 +1,10 @@
+// invalid.tc - deliberately broken SYNTAX: shows syntax error detection + recovery
+int x = 10
+float y = 3.5;
+if (x = 5) {
+    print("oops");
+}
+while (x < 10 {
+    x++;
+}
+print("missing paren";

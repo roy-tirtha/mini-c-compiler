@@ -1,0 +1,21 @@
+// arithmetic.tc - operators, precedence and int/float mixing
+int a = 17;
+int b = 5;
+
+print("a + b =", a + b);
+print("a - b =", a - b);
+print("a * b =", a * b);
+print("a / b =", a / b);          // integer division -> 3
+print("a % b =", a % b);          // remainder -> 2
+
+float x = 7.5;
+print("x / 2 =", x / 2);          // int promoted to float -> 3.75
+print("precedence:", 2 + 3 * 4);  // 14
+print("parentheses:", (2 + 3) * 4); // 20
+print("negation:", -a + 3);
+
+int counter = 10;
+counter += 5;
+counter *= 2;
+counter--;
+print("counter =", counter);     // 29
